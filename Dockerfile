@@ -7,6 +7,8 @@ RUN apt-get install -y python python-pip wget gcc phantomjs firefox
 
 RUN apt-get install -y xvfb
 
+RUN apt-get install -y lynx
+
 RUN apt-get install sudo 
 
 RUN sudo apt install  -y apache2
