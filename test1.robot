@@ -4,7 +4,7 @@ Library  String
 Library  Selenium2Library
 
 *** Variables ***
-${Password}  ipassw0rd
+${Password}  passw0rd
 #Added a commnet
 #Added a new comment
 #Added a comment to trigger a build.
