@@ -32,6 +32,7 @@ ADD app3.py /home
 ADD app4.py /home
 ADD dummy.py /home
 ADD tabledef.py /home
+ADD test1.robot /home
 RUN /usr/bin/python  tabledef.py
 RUN /usr/bin/python  dummy.py
  
