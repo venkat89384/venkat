@@ -30,6 +30,7 @@ ADD app1.py /home
 ADD app2.py /home
 ADD app3.py /home
 ADD app4.py /home
+RUN chmod +x /home/app4.py
 ADD dummy.py /home
 ADD tabledef.py /home
 ADD test1.robot /home
@@ -42,5 +43,6 @@ ADD login1.html /home/templates
 RUN mkdir -pv /home/static/
 ADD style.css /home/static
 #ADD  /sbin/ifconfig /home
-ENTRYPOINT ["/usr/bin/python", "app4.py"] 
+#ENTRYPOINT ["/usr/bin/python", "app4.py"]
+ENTRYPOINT ["nohup", "/usr/bin/python","/home/app4.py", "&"]
 #Added comment to checkin the file.
